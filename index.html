@@ -1,0 +1,64 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>When</td><td>Who</td><td>What</td><td>Where</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-time="09:00"></td>
+          <td>KeyForge Indonesia</td>
+          <td></td>
+          <td><a href="https://www.youtube.com/channel/UC8YwQ-8THGPpad0FM_dPbrg">YouTube</a></td>
+        </tr>
+        <tr>
+          <td data-time="11:00"></td>
+          <td>KeyForge Portugal</td>
+          <td></td>
+          <td>
+            <a href="https://www.twitch.tv/KeyforgePT">Twitch</a>
+            <a href="https://www.youtube.com/channel/UC8YwQ-8THGPpad0FM_dPbrg">YouTube</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      table {
+        width: 100%;
+      }
+      thead {
+        font-weight: bold;
+      }
+      td {
+        height: 30px;
+      }
+      td:nth-child(1) {
+        width: 100px;
+      }
+      td:nth-child(2) {
+        width: 200px;
+      }
+      td:nth-child(4) {
+        width: 200px;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script type="text/javascript">
+      const tdTimes = document.querySelectorAll('[data-time]');
+      tdTimes.forEach(function(tdTimes) {
+        const time = tdTimes.getAttribute('data-time');
+        tdTimes.innerHTML = moment.utc(time, 'HH:mm').local().format('HH:mm');
+      });
+    </script>
+  </body>
+</html>
