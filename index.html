@@ -38,11 +38,66 @@
 
         <tr>
           <td data-start-time="13:00" data-end-time="14:00"></td>
-          <td>KeyFlow</td>
-          <td>KeyForge Adventures - blind sealed against the Keyraken </td>
+          <td>KeyFlox</td>
+          <td>KeyForge Adventures - blind sealed against the Keyraken</td>
           <td>
             <a href="https://www.youtube.com/channel/UCWIZtPIE6pNZAwX5-JjOgvQ">
               <img src="youtube.svg" alt="YouTube"/>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-start-time="17:00" data-end-time="19:00"></td>
+          <td>KOTE</td>
+          <td></td>
+          <td>
+            <a href="https://www.twitch.tv/keyforgeonlineteamevents">
+              <img src="twitch.svg" alt="Twitch"/>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-start-time="19:00" data-end-time="21:00"></td>
+          <td>Keyfrogs</td>
+          <td></td>
+          <td>
+            <a href="https://www.twitch.tv/Keyfrogs">
+              <img src="twitch.svg" alt="Twitch"/>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-start-time="21:00" data-end-time="23:00"></td>
+          <td>PrimeCutGames</td>
+          <td></td>
+          <td>
+            <a href="https://www.twitch.tv/PrimeCutGames">
+              <img src="twitch.svg" alt="Twitch"/>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-start-time="23:00" data-end-time="02:00"></td>
+          <td>Tabletop Royale</td>
+          <td></td>
+          <td>
+            <a href="https://www.twitch.tv/tabletoproyale">
+              <img src="twitch.svg" alt="Twitch"/>
+            </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-start-time="02:00" data-end-time="05:00"></td>
+          <td>Jupiter</td>
+          <td>Games and how to make a YouTube video</td>
+          <td>
+            <a href="https://www.twitch.tv/kfpl_jupiter">
+              <img src="twitch.svg" alt="Twitch"/>
             </a>
           </td>
         </tr>
@@ -64,12 +119,19 @@
       }
       table {
         width: 100%;
+        border-collapse: collapse;
       }
       thead {
         font-weight: bold;
       }
+      tr:hover td {
+        background-color: #FAFAFA;
+      }
       td {
-        height: 40px;
+        min-height: 40px;
+        padding: 10px;
+        border-bottom: 1px solid #EEE;
+        vertical-align: middle;
       }
       td:nth-child(1) {
         width: 120px;
@@ -78,11 +140,12 @@
         width: 200px;
       }
       td:nth-child(4) {
-        width: 200px;
+        width: 80px;
       }
       td img {
-        max-height: 30px;
+        max-height: 20px;
         margin: 0 5px;
+        vertical-align: bottom;
       }
     </style>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
